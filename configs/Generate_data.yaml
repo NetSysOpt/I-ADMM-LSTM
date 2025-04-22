@@ -1,0 +1,9 @@
+---
+
+
+num_var: 100
+num_eq: 50
+num_ineq: 50
+data_size: 10000
+prob_type: "QP_RHS"
+ptb_deg: 0.1
