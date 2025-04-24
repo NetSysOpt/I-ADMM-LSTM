@@ -32,14 +32,14 @@ osqp=0.6.3
 ## Running experiments
 To generate a convex QP dataset with 1000 variables, 500 inequality constraints, and 500 equality constraints, run:
 ```markdown
-python generate_data.py --config .\configs\Generate_Data.yaml --prob_type QP --num_var 1000 --num_ineq 500 --num_eq 500
+python generate_data.py --config ./configs/Generate_Data.yaml --prob_type QP --num_var 1000 --num_ineq 500 --num_eq 500
 ```
 For training phase, you can run following command:
 ```markdown
-python main.py --config .\configs\QP.yaml --prob_type QP --outer_T 100 --truncated_length 100 --hidden_dim 800 --eq_tol 0.2 --ineq_tol 0.2 --scaling
+python main.py --config ./configs/QP.yaml --prob_type QP --outer_T 100 --truncated_length 100 --hidden_dim 800 --eq_tol 0.2 --ineq_tol 0.2 --scaling
 ```
-Our model will be stored at `./results/lstm/params/QP_RHS_100_50_50_100_50.pth`. During the testing phase, you can run the following command to obtain our experimental results:
+Our model will be stored at `./results/lstm/params/QP_1000_500_500_100_800.pth`. During the testing phase, you can run the following command to obtain our experimental results:
 ```markdown
-python main.py --config ./configs/QP.yaml --prob_type QP_RHS --test --solver ipopt --save_sol
+python main.py --config ./configs/QP.yaml --prob_type QP --outer_T 100 --truncated_length 100 --hidden_dim 800 --eq_tol 0.2 --ineq_tol 0.2 --scaling --test --test_outer_T 100 --save_sol
 ```
 
