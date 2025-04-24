@@ -4,7 +4,7 @@ This represitory is an implementation of the paper: A Learning-Based Inexact ADM
 Quadratic programs (QPs) constitute a fundamental class of constrained optimization problems with broad applications spanning multiple disciplines, including finance, engineering, and machine learning. The development of efficient and reliable algorithms for solving QPs continues to be an important research direction due to their widespread utility. This paper focuses on solving the following convex quadratic program:
 
 $$
-    \begin{algined}
+    \begin{aligned}
         &\underset{x\in\mathbb{R}^n}{\text{min}} && \frac{1}{2} x^{\top} Q x + p^{\top} x \\
         & \text{s.t.} && l \leq A x \leq u,
     \end{aligned}
