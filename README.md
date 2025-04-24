@@ -5,8 +5,8 @@ Quadratic programs (QPs) constitute a fundamental class of constrained optimizat
 
 $$
     \begin{algined}
-        \underset{x\in\mathbb{R}^n}{\operatorname{minimize}} & \frac{1}{2} x^{\top} Q x + p^{\top} x \\
-        \text{subject to} & l \leq A x \leq u,
+        &\underset{x\in\mathbb{R}^n}{\text{min}} && \frac{1}{2} x^{\top} Q x + p^{\top} x \\
+        & \text{s.t.} && l \leq A x \leq u,
     \end{aligned}
 $$
 
