@@ -14,7 +14,7 @@ where the optimization variable $x \in \mathbb{R}^n$ minimizes a quadratic objec
 
 $$
 \begin{aligned}
-    \min _{\theta} \frac{1}{|\mathcal{B}|} \sum_{B \in \mathcal{B}}\left(\frac{1}{K} \sum_{k=1}^{K} \left\|A x^k - z^k\right\|+\left\|Q x^k + p + A^\top y^k\right\|\right)_{B},
+    \min_{\theta} \frac{1}{|\mathcal{B}|} \sum_{B \in \mathcal{B}}\left(\frac{1}{K} \sum_{k=1}^{K} \left\|A x^k - z^k\right\|+\left\|Q x^k + p + A^\top y^k\right\|\right)_{B},
 \end{aligned}
 $$
 
