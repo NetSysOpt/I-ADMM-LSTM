@@ -60,6 +60,7 @@ parser.add_argument('--test_batch_size', type=int, help='Batch size during testi
 parser.add_argument('--data_size', type=int, help='Batch size for training.')
 parser.add_argument('--feas_rest', action='store_true', help='Restorate the feasibility.')
 parser.add_argument('--feas_rest_num', type=int, help='The iteration number of feasibility restoration.')
+parser.add_argument('--weight_decay', type=float, default=0.0, help='weight decay rate.')
 
 # learning-based model
 args, _ = parser.parse_known_args()
