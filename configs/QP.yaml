@@ -1,0 +1,40 @@
+---
+
+num_var: 5000
+num_eq: 2500
+num_ineq: 2500
+prob_type: "QPLIB"
+qplib_num: 8845
+
+scaling: False
+scaling_ites: 10
+input_dim: 2
+hidden_dim: 200
+model_name: "LSTM"
+sigma: 0.000006
+
+eq_tol: 0.01
+ineq_tol: 0.002
+truncated_length: 50
+training_mode: "unsupervise"
+early_stop_mode: 'min'
+val_frac: 0.01
+test_frac: 0.05
+batch_size: 128
+device: 'cuda:0'
+lr: 0.0001
+num_epoch: 1000
+outer_T: 10
+inner_T: 50
+patience: 100
+save_dir: './results/'
+seed: 17
+test: False
+test_outer_T: 50
+test_batch_size: 1
+test_solver: 'osqp'
+data_size: 1000
+weight_decay: 0.0
+feas_rest: False
+feas_rest_num: 20
+
